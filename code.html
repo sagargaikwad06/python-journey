@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-surface":"#dae2fd","on-error":"#690005","surface-tint":"#7bd0ff","primary-fixed":"#c4e7ff","surface-container":"#171f33","primary":"#8ed5ff","secondary-fixed-dim":"#f9bd22","surface-dim":"#0b1326","surface-container-low":"#131b2e","background":"#0b1326","on-surface-variant":"#bdc8d1","secondary-container":"#e3aa00","tertiary":"#bccbff","surface-container-high":"#222a3d","on-secondary-container":"#5a4100","surface-variant":"#2d3449","on-secondary-fixed":"#261a00","on-tertiary-container":"#003ba1","outline-variant":"#3e484f","on-surface":"#dae2fd","on-background":"#dae2fd","surface":"#0b1326","surface-bright":"#31394d","on-tertiary-fixed":"#00174b","on-primary-fixed-variant":"#004c69","inverse-on-surface":"#283044","on-secondary-fixed-variant":"#5c4300","tertiary-fixed":"#dbe1ff","on-tertiary":"#002a78","tertiary-fixed-dim":"#b4c5ff","primary-fixed-dim":"#7bd0ff","on-primary-container":"#004965","error-container":"#93000a","primary-container":"#38bdf8","secondary":"#ffc640","tertiary-container":"#94aeff","outline":"#87929a","on-tertiary-fixed-variant":"#003ea8","on-primary":"#00354a","surface-container-lowest":"#060e20","on-error-container":"#ffdad6","error":"#ffb4ab","surface-container-highest":"#2d3449","on-secondary":"#402d00","inverse-primary":"#00668a","secondary-fixed":"#ffdf9f","on-primary-fixed":"#001e2c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-mobile":"1rem","space-3xl":"3rem","space-2xs":"0.125rem","gutter-desktop":"1.5rem","sidebar-width":"18rem","space-lg":"1rem","space-md":"0.75rem","container-max":"84rem","space-xl":"1.5rem","space-2xl":"2rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"label-badge":["JetBrains Mono"],"headline-sm":["Inter"],"headline-xl":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"label-kbd":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"body-md":["Inter"],"code-lg":["JetBrains Mono"],"headline-xl-mobile":["Inter"],"headline-lg":["Inter"]},"fontSize":{"label-badge":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.011em","fontWeight":"400"}],"label-kbd":["10px",{"lineHeight":"12px","letterSpacing":"0.02em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"-0.006em","fontWeight":"400"}],"code-lg":["14px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm" href="#"><img alt="PyPrep.io Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WlEJg0udDSz7g_BVN1eJ7EVlteABQZHXdngfuPwiQDRqQ33htt0S1kwEEG7_4n6UG5dRPllOdWT8TwqV5-YK6ZFtc0xPKtpQGlh_7NrSNI-fwWM_7fAqM3Cxg4iLFP_gANsimBi305vPsCu53KipQ8EDtIUL_jMNJhY6-UeBF6i1V8C6BzCs8MBbWR5WoPiwAgYOpxlLVGo6qX8dttjwwLzoTZeBWnoN0fH1p6uOmgNEZ_HnLJY7StXtI"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">PyPrep<span class="text-primary">.io</span></span></a><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded border border-outline-variant/40"><span class="font-label-badge text-label-badge text-primary">v2.4</span><span class="text-outline font-body-sm text-body-sm">•</span><span class="font-body-sm text-body-sm text-on-surface-variant">Python 3.12 Spec</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><button class="w-full flex items-center justify-between bg-surface-container px-space-md py-space-xs rounded border border-outline-variant/50 hover:border-primary/60 transition-colors text-left group"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-outline group-hover:text-primary transition-colors">search</span><span class="font-body-sm text-body-sm text-outline group-hover:text-on-surface-variant transition-colors">Quick search questions...</span></div><div class="flex items-center gap-space-xs"><kbd class="bg-surface-container-high px-space-xs py-space-2xs rounded font-label-kbd text-label-kbd text-on-surface-variant border border-outline-variant/50">⌘K</kbd></div></button></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden lg:flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded border border-outline-variant/40"><span class="material-symbols-outlined text-[16px] text-secondary">military_tech</span><div class="flex flex-col"><span class="font-label-badge text-label-badge text-on-surface font-semibold">78 / 153</span><span class="font-label-kbd text-label-kbd text-outline uppercase">Mastered</span></div><div class="w-12 h-1.5 bg-surface-container-highest rounded-full overflow-hidden ml-space-xs"><div class="bg-secondary h-full rounded-full" style="width: 51%"></div></div></div><div class="flex items-center gap-space-xs"><a class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#" title="Bookmarks"><span class="material-symbols-outlined text-[20px]">bookmark</span></a><a class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#" title="GitHub Repository"><span class="material-symbols-outlined text-[20px]">code</span></a></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-sidebar-width bg-surface-container-lowest/80 backdrop-blur-md overflow-y-auto border-r border-outline-variant/30 flex flex-col justify-between py-space-md z-40"><div class="space-y-space-lg px-space-md"><div><div class="px-space-sm mb-space-xs font-label-badge text-label-badge uppercase tracking-wider text-outline">Categories</div><nav class="space-y-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a aria-current="page" class="flex items-center px-space-sm py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded" data-path="handbook-questions" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">layers</span>All Questions</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="core-basics" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">data_object</span>Core Basics &amp; Types</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="control-flow" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">alt_route</span>Control Flow</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="functions-scope" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">functions</span>Functions &amp; Closures</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="data-structures" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">account_tree</span>Data Structures</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="oop-classes" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">view_in_ar</span>OOP &amp; Metaclasses</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="error-handling" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">warning</span>Error Handling</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="modules-io" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">folder_open</span>File I/O &amp; Modules</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="advanced-memory" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">memory</span>Advanced &amp; Memory</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="code-challenges" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">terminal</span>Code Challenges</a><a class="flex items-center px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm transition-all" data-path="system-architecture" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">hub</span>System &amp; Architecture</a></nav></div><div><div class="px-space-sm mb-space-xs font-label-badge text-label-badge uppercase tracking-wider text-outline">Difficulty Filter</div><div class="flex flex-wrap gap-space-xs px-space-xs"><button class="px-space-sm py-space-2xs rounded bg-surface-container-high text-on-surface font-label-badge text-label-badge border border-outline-variant/40 hover:border-primary/50">All</button><button class="px-space-sm py-space-2xs rounded bg-surface-container-low text-[#34D399] font-label-badge text-label-badge border border-outline-variant/30 hover:bg-surface-container">Beginner</button><button class="px-space-sm py-space-2xs rounded bg-surface-container-low text-secondary font-label-badge text-label-badge border border-outline-variant/30 hover:bg-surface-container">Intermediate</button><button class="px-space-sm py-space-2xs rounded bg-surface-container-low text-primary font-label-badge text-label-badge border border-outline-variant/30 hover:bg-surface-container">Advanced</button><button class="px-space-sm py-space-2xs rounded bg-surface-container-low text-[#F87171] font-label-badge text-label-badge border border-outline-variant/30 hover:bg-surface-container">Senior / Architect</button></div></div></div><div class="px-space-md pt-space-md border-t border-outline-variant/30"><div class="bg-surface-container-low p-space-sm rounded border border-outline-variant/30 flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-outline">keyboard</span><span class="font-label-kbd text-label-kbd text-outline">Press / to search</span></div><kbd class="bg-surface-container px-space-xs py-space-2xs rounded font-label-kbd text-label-kbd text-on-surface-variant border border-outline-variant/40">?</kbd></div></div></aside><div class="pl-sidebar-width"><main class="relative pt-16 bg-background min-h-screen w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Progress & Stat Bar -->
+<section class="w-full bg-surface-container-low/90 backdrop-blur-md rounded-xl p-space-lg mb-space-xl shadow-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest">Mastery Curriculum</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-label-badge text-label-badge text-secondary bg-secondary/10 px-space-xs py-space-2xs rounded">Python 3.12+ LTS</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">The Complete Python Interview Master Handbook</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          153 production-verified questions, comprehensive architectural answers, memory models, and 15 live algorithm implementations designed for L4-L7 software engineer and backend architect loops.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md shrink-0">
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-kbd text-label-kbd text-outline uppercase tracking-wider">Session Progress</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold" id="mastered-count">24</span>
+<span class="font-body-sm text-body-sm text-outline">/ 153 Mastered</span>
+</div>
+</div>
+<svg class="w-10 h-10 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-secondary stroke-current transition-all duration-500" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" id="progress-ring" stroke-dasharray="16, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-lg font-body-sm text-body-sm transition-colors shadow-sm" id="btn-toggle-all">
+<span class="material-symbols-outlined text-[18px]">unfold_more</span>
+<span id="toggle-all-label">Expand All</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant px-space-md py-space-sm rounded-lg font-body-sm text-body-sm transition-colors shadow-sm" id="btn-reset-filters" title="Clear Filters">
+<span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Stats Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-lg pt-space-md bg-surface-container-lowest/60 rounded-lg p-space-sm">
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">quiz</span>
+<div>
+<p class="font-label-badge text-label-badge text-outline uppercase">Questions</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">153 Total</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">terminal</span>
+<div>
+<p class="font-label-badge text-label-badge text-outline uppercase">Live Snippets</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">45+ Tested</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">account_tree</span>
+<div>
+<p class="font-label-badge text-label-badge text-outline uppercase">Core Modules</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">11 Domains</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-[#34D399] text-[22px]">verified</span>
+<div>
+<p class="font-label-badge text-label-badge text-outline uppercase">Target Level</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">Junior → Staff</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Controls Bar -->
+<section class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md pb-space-md mb-space-lg shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<!-- Search Input -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-11 pr-space-xl py-space-sm bg-surface-container rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all" id="handbook-search" placeholder="Filter by question, concept (e.g., 'GIL', 'MRO', 'yield', 'LEGB', 'shallow copy'), or ID #..." type="text"/>
+<button class="hidden absolute right-space-md top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="clear-search">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs no-scrollbar">
+<button class="cat-pill active shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-primary text-on-primary font-semibold transition-colors" data-cat="all">
+          All (153)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="core">
+          Core Basics (21)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="flow">
+          Control Flow (10)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="functions">
+          Functions &amp; Scope (15)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="ds">
+          Data Structures (25)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="oop">
+          OOP &amp; Design (15)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="exceptions">
+          Exceptions &amp; Debug (11)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="files">
+          Files, OS &amp; I/O (12)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="ecosystem">
+          Modules &amp; Pkg (9)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="advanced">
+          Memory, GIL &amp; Concurrency (16)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="algorithms">
+          Coding Challenges (15)
+        </button>
+<button class="cat-pill shrink-0 px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" data-cat="production">
+          Production &amp; Arch (4)
+        </button>
+</div>
+</div>
+</section>
+<!-- Dual Layout: Main Questions Feed + Sticky Jump Sidebar -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- Accordion Module Container (9 cols on XL) -->
+<div class="xl:col-span-9 space-y-space-2xl" id="questions-feed">
+<!-- MODULE 1: CORE FOUNDATIONS -->
+<section class="space-y-space-md" data-cat-section="core" id="mod-core">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">01</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Python Core Foundations</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q1 — Q20, Q151</span>
+</div>
+<!-- Q1 -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="core" data-qid="1">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#001</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">What is Python and why has it become the industry dominant language?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Python is a high-level, interpreted, dynamically-typed, garbage-collected, and multi-paradigm programming language created by Guido van Rossum in 1991. It emphasizes human code readability via significant indentation (off-side rule).</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm text-body-sm">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-semibold text-primary">Core Architectural Drivers:</span>
+<ul class="list-disc list-inside mt-space-2xs space-y-space-2xs text-on-surface">
+<li>Rapid prototyping speed &amp; near-pseudocode syntax</li>
+<li>Deep C/C++ FFI bindings (`ctypes`, `Cython`, Python C-API)</li>
+<li>Dominance in AI/ML (PyTorch, TensorFlow, NumPy)</li>
+<li>Batteries-included standard library</li>
+</ul>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-semibold text-secondary">Tradeoffs &amp; Constraints:</span>
+<ul class="list-disc list-inside mt-space-2xs space-y-space-2xs text-on-surface">
+<li>Execution overhead compared to compiled languages (C, Rust)</li>
+<li>CPython Global Interpreter Lock (GIL) limits multi-core CPU threads</li>
+<li>Runtime type errors if not strictly enforced with static linters (`mypy`)</li>
+</ul>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+<span class="font-label-badge text-label-badge text-outline">Ref: Python 3 Reference Spec §1</span>
+</div>
+</div>
+</article>
+<!-- Q3: Python 2 vs 3 -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="core" data-qid="3">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#003</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">What are the critical architectural differences between Python 2 and Python 3?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface font-semibold">
+<th class="p-space-sm rounded-l">Dimension</th>
+<th class="p-space-sm">Python 2 (Legacy / EOL 2020)</th>
+<th class="p-space-sm rounded-r">Python 3 (Current Standard)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<tr class="hover:bg-surface-container/50">
+<td class="p-space-sm font-semibold text-primary">Text &amp; Encoding</td>
+<td class="p-space-sm">ASCII string by default (`str`); explicit `unicode` type</td>
+<td class="p-space-sm">All strings are Unicode (`str`); raw bytes are distinct (`bytes`)</td>
+</tr>
+<tr class="hover:bg-surface-container/50">
+<td class="p-space-sm font-semibold text-primary">Integer Division</td>
+<td class="p-space-sm">Floor division: `5 / 2 = 2` (truncates)</td>
+<td class="p-space-sm">True float division: `5 / 2 = 2.5`; floor operator is `//`</td>
+</tr>
+<tr class="hover:bg-surface-container/50">
+<td class="p-space-sm font-semibold text-primary">Print Statement</td>
+<td class="p-space-sm">Keyword statement: `print "hello"`</td>
+<td class="p-space-sm">First-class callable: `print("hello", end="\n")`</td>
+</tr>
+<tr class="hover:bg-surface-container/50">
+<td class="p-space-sm font-semibold text-primary">Range Generation</td>
+<td class="p-space-sm">`range()` allocates full in-memory list; `xrange()` lazy</td>
+<td class="p-space-sm">`range()` is an immutable O(1) memory sequence view generator</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q7: List vs Tuple vs Set vs Dict -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="core" data-qid="7">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#007</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Deep comparison: List vs. Tuple vs. Set vs. Dictionary</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-primary/10 text-primary">ADVANCED</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface font-semibold">
+<th class="p-space-sm rounded-l">Collection</th>
+<th class="p-space-sm">Ordering</th>
+<th class="p-space-sm">Mutability</th>
+<th class="p-space-sm">Duplicates</th>
+<th class="p-space-sm">Hashable</th>
+<th class="p-space-sm rounded-r">Membership Lookup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="hover:bg-surface-container/40">
+<td class="p-space-sm font-code-sm text-primary font-bold">list</td>
+<td class="p-space-sm">Ordered (by insertion index)</td>
+<td class="p-space-sm text-secondary">Mutable</td>
+<td class="p-space-sm">Allowed</td>
+<td class="p-space-sm text-[#F87171]">No (unhashable)</td>
+<td class="p-space-sm font-code-sm">O(n) linear scan</td>
+</tr>
+<tr class="hover:bg-surface-container/40">
+<td class="p-space-sm font-code-sm text-primary font-bold">tuple</td>
+<td class="p-space-sm">Ordered (by index)</td>
+<td class="p-space-sm text-[#34D399]">Immutable</td>
+<td class="p-space-sm">Allowed</td>
+<td class="p-space-sm text-[#34D399]">Yes (if contents hashable)</td>
+<td class="p-space-sm font-code-sm">O(n) linear scan</td>
+</tr>
+<tr class="hover:bg-surface-container/40">
+<td class="p-space-sm font-code-sm text-primary font-bold">set</td>
+<td class="p-space-sm">Unordered hash table</td>
+<td class="p-space-sm text-secondary">Mutable (`frozenset` immutable)</td>
+<td class="p-space-sm">Disallowed (Unique)</td>
+<td class="p-space-sm text-[#F87171]">No (`frozenset` is Yes)</td>
+<td class="p-space-sm font-code-sm text-[#34D399]">O(1) average hash lookup</td>
+</tr>
+<tr class="hover:bg-surface-container/40">
+<td class="p-space-sm font-code-sm text-primary font-bold">dict</td>
+<td class="p-space-sm">Insertion-ordered (3.7+)</td>
+<td class="p-space-sm text-secondary">Mutable (keys immutable)</td>
+<td class="p-space-sm">Unique keys, duplicate values</td>
+<td class="p-space-sm text-[#F87171]">No</td>
+<td class="p-space-sm font-code-sm text-[#34D399]">O(1) average hash lookup</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q18: is vs == -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="core" data-qid="18">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#018</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">What is the exact difference between "is" and "==" in CPython?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p><code class="font-code-sm text-primary">==</code> evaluates <strong>value equality</strong> by executing the left operand's dunder method <code class="font-code-sm">a.__eq__(b)</code>. <code class="font-code-sm text-primary">is</code> evaluates <strong>identity equality</strong>, asserting that both variable identifiers point to the exact same block of memory address (<code class="font-code-sm">id(a) == id(b)</code>).</p>
+<div class="bg-surface-container rounded-lg p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-outline text-label-badge font-label-badge">
+<span>python</span>
+<button class="copy-btn hover:text-on-surface transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy
+                </button>
+</div>
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>a = [1, 2, 3]
+b = [1, 2, 3]
+c = a
+
+print(a == b)  # True  (equivalent contents)
+print(a is b)  # False (distinct heap allocations in memory)
+print(a is c)  # True  (exact same pointer)
+
+# CPython Small Integer Caching Pitfall (-5 to 256):
+x = 256
+y = 256
+print(x is y)  # True (interned singletons in CPython PyLongObject cache)
+
+x = 1000
+y = 1000
+print(x is y)  # False (allocated as distinct PyObject pointers)</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q19 & Q20: Mutability -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="core" data-qid="19">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#019</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Mutable vs. Immutable objects &amp; The Default Argument Mutation Trap</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Every object in Python possesses a type, a value, and an identity <code class="font-code-sm">id()</code>. An object is <strong>mutable</strong> if its value can be modified in-place without altering its <code class="font-code-sm">id()</code>. An object is <strong>immutable</strong> if modifying it forces the runtime to allocate an entirely new memory address.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm font-body-sm">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="text-secondary font-semibold">Mutable Types:</span>
+<p class="font-code-sm mt-space-2xs text-on-surface">list, dict, set, bytearray</p>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="text-[#34D399] font-semibold">Immutable Types:</span>
+<p class="font-code-sm mt-space-2xs text-on-surface">int, float, complex, str, tuple, frozenset, bool, bytes</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md space-y-space-xs">
+<span class="font-label-kbd text-label-kbd text-secondary uppercase">Classic Staff Engineer Trap: Mutable Default Arguments</span>
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code># ANTIPATTERN: Evaluated once when function definition is compiled!
+def append_to(element, target_list=[]):
+    target_list.append(element)
+    return target_list
+
+print(append_to(1))  # [1]
+print(append_to(2))  # [1, 2] -&gt; Leaks across calls!
+
+# PRODUCTION PATTERN:
+def append_to_safe(element, target_list=None):
+    if target_list is None:
+        target_list = []
+    target_list.append(element)
+    return target_list</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q151: Scripting vs Programming -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="core" data-qid="151">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#151</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Is Python a Scripting or a Programming language? How does it bridge both?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Python is <strong>both</strong> a general-purpose programming language and an advanced scripting language. While it can be run line-by-line via REPL or shell scripts without explicit upfront build steps (scripting), it supports robust OOP, metaprogramming, static typing, and complex multithreaded/distributed architectures (enterprise programming).</p>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 2: CONTROL FLOW & ITERATION -->
+<section class="space-y-space-md" data-cat-section="flow" id="mod-flow">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">02</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Control Flow &amp; Iteration</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q21 — Q30</span>
+</div>
+<!-- Q24: break, continue, pass -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="flow" data-qid="24">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#024</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Exact distinction between `break`, `continue`, and `pass`</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<ul class="space-y-space-xs text-body-sm">
+<li><strong class="text-primary font-code-sm">break:</strong> Terminate execution of innermost loop immediately; control shifts to statement following the loop.</li>
+<li><strong class="text-primary font-code-sm">continue:</strong> Abort remainder of current cycle immediately; jump straight to evaluation of next iteration step.</li>
+<li><strong class="text-primary font-code-sm">pass:</strong> Syntactic null-operation (no-op). Does nothing during execution; serves as placeholder where an expression is syntactically required (e.g. empty classes or stubs).</li>
+</ul>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q26: for-else -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="flow" data-qid="26">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#026</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">How does Python's unique `for-else` and `while-else` construct work?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>The <code class="font-code-sm text-primary">else</code> block following a loop runs <strong>only if the loop completes without encountering a `break` statement</strong>. If the iterable is empty, the else clause executes immediately.</p>
+<div class="bg-surface-container rounded-lg p-space-md space-y-space-xs">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>def find_first_even(numbers: list[int]) -&gt; None:
+    for n in numbers:
+        if n % 2 == 0:
+            print(f"Found even integer: {n}")
+            break
+    else:
+        # Executes only if NO break occurred in the entire scan
+        print("No even integer found in dataset.")</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 3: FUNCTIONS, LAMBDAS & SCOPING -->
+<section class="space-y-space-md" data-cat-section="functions" id="mod-functions">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">03</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Functions, Lambdas &amp; Scoping</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q31 — Q45</span>
+</div>
+<!-- Q37: *args & **kwargs -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="functions" data-qid="37">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#037</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Comprehensive Mechanics: `*args`, `**kwargs`, and Keyword-Only Arguments</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p><code class="font-code-sm text-primary">*args</code> packs excess positional arguments into an immutable <code class="font-code-sm">tuple</code>. <code class="font-code-sm text-primary">**kwargs</code> packs arbitrary keyword arguments into a mutable <code class="font-code-sm">dict</code>.</p>
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code># Signature ordering in Python 3.8+:
+# (positional_only, /, standard_args, *args, kw_only_args, **kwargs)
+
+def pipeline_step(pos_val: int, /, standard_val: str, *args, timeout: float = 30.0, **kwargs):
+    print(f"Positional only: {pos_val}")
+    print(f"Standard arg: {standard_val}")
+    print(f"Packed args tuple: {args}")
+    print(f"Keyword-only arg: {timeout}")
+    print(f"Packed kwargs dict: {kwargs}")</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q44 & Q45: LEGB Scope -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="functions" data-qid="44">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#044</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Explain the LEGB Rule, `global`, and `nonlocal` scoping keywords</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-primary/10 text-primary">ADVANCED</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>CPython resolves variable identifiers sequentially through 4 distinct scopes (<strong>LEGB</strong>):</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-xs text-center text-body-sm font-label-badge">
+<div class="p-space-sm bg-surface-container rounded-lg"><span class="text-primary font-bold">L</span>ocal</div>
+<div class="p-space-sm bg-surface-container rounded-lg"><span class="text-secondary font-bold">E</span>nclosing</div>
+<div class="p-space-sm bg-surface-container rounded-lg"><span class="text-primary-container font-bold">G</span>lobal</div>
+<div class="p-space-sm bg-surface-container rounded-lg"><span class="text-[#34D399] font-bold">B</span>uilt-in</div>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>def outer():
+    count = 0
+    def inner():
+        nonlocal count  # Binds to nearest enclosing non-global scope
+        count += 1
+        return count
+    return inner
+
+counter_a = outer()
+print(counter_a())  # 1
+print(counter_a())  # 2</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 4: DATA STRUCTURES & COLLECTIONS -->
+<section class="space-y-space-md" data-cat-section="ds" id="mod-ds">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">04</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Data Structures &amp; Built-in Collections</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q46 — Q70</span>
+</div>
+<!-- Q47: append vs extend -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="ds" data-qid="47">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#047</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">List Mutation: `append()` vs. `extend()` vs. `+` concatenation</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<ul class="space-y-space-2xs text-body-sm">
+<li><code class="font-code-sm text-primary">append(x)</code>: Adds <code class="font-code-sm">x</code> as a single atomic element at list end. Time complexity: Amortized O(1).</li>
+<li><code class="font-code-sm text-primary">extend(iterable)</code>: Iterates over container, appending each sub-element into original list in-place. Time complexity: O(k).</li>
+<li><code class="font-code-sm text-primary">a + b</code>: Allocates a completely new list containing all items. Time complexity: O(n + k).</li>
+</ul>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q50: list.sort vs sorted -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="ds" data-qid="50">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#050</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Timsort: Difference between `list.sort()` and `sorted()`</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Both use <strong>Timsort</strong> (hybrid Merge Sort + Insertion Sort) providing guaranteed <code class="font-code-sm">O(n log n)</code> worst-case time complexity, with <code class="font-code-sm">O(n)</code> on already sorted input.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm text-body-sm">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<p class="font-code-sm font-semibold text-primary">my_list.sort(key=..., reverse=...)</p>
+<p class="text-on-surface mt-space-2xs">Modifies caller list in-place. Returns <code class="font-code-sm">None</code> to prevent method-chaining misconceptions. Memory overhead: O(1).</p>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<p class="font-code-sm font-semibold text-secondary">sorted(iterable, key=..., reverse=...)</p>
+<p class="text-on-surface mt-space-2xs">Accepts any iterable (strings, sets, generators). Allocates &amp; returns a new sorted list. Memory overhead: O(n).</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q58: dict.get vs dict[] -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="ds" data-qid="58">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#058</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Dictionary Access: Why `dict.get()` prevents production crash outages</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Direct indexing <code class="font-code-sm text-error">d[key]</code> raises an unhandled <code class="font-code-sm">KeyError</code> if the key is missing from the hash table. In contrast, <code class="font-code-sm text-primary">d.get(key, default=None)</code> returns a clean fallback value without raising an exception.</p>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 5: OBJECT-ORIENTED PROGRAMMING (OOP) -->
+<section class="space-y-space-md" data-cat-section="oop" id="mod-oop">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">05</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Object-Oriented Programming (OOP)</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q71 — Q85</span>
+</div>
+<!-- Q83: MRO & C3 Linearization -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="oop" data-qid="83">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#083</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Multiple Inheritance: How C3 Linearization (MRO) Solves the Diamond Problem</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#F87171]/10 text-[#F87171]">SENIOR / ARCHITECT</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Python resolves method calls using the <strong>C3 Linearization Algorithm</strong> (Method Resolution Order). Inspectable via <code class="font-code-sm">Class.__mro__</code> or <code class="font-code-sm">Class.mro()</code>. Guarantees monotonic ordering: subclass precedes parent, and inheritance declared order is strictly preserved.</p>
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>class A: 
+    def ping(self): return "A"
+class B(A): 
+    def ping(self): return "B"
+class C(A): 
+    def ping(self): return "C"
+class D(B, C): 
+    pass
+
+print([cls.__name__ for cls in D.__mro__])
+# Result: ['D', 'B', 'C', 'A', 'object']
+# D().ping() returns 'B'</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q81: Access Specifiers & Mangling -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="oop" data-qid="81">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#081</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Access Specifiers in Python: Name Mangling for Private Attributes (`__var`)</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<ul class="space-y-space-2xs text-body-sm">
+<li><strong class="text-primary font-code-sm">Public (`self.name`):</strong> Readily accessible everywhere.</li>
+<li><strong class="text-secondary font-code-sm">Protected (`self._protected`):</strong> Community convention (PEP 8) signaling internal usage. Not enforced by runtime.</li>
+<li><strong class="text-[#F87171] font-code-sm">Private (`self.__private`):</strong> Triggers Python compiler <strong>name mangling</strong>. Rewritten internally to <code class="font-code-sm">_ClassName__private</code> to prevent accidental overrides in derived classes.</li>
+</ul>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 6: EXCEPTIONS & DEBUGGING -->
+<section class="space-y-space-md" data-cat-section="exceptions" id="mod-exceptions">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">06</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Exceptions, Errors &amp; Debugging</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q86 — Q95, Q149</span>
+</div>
+<!-- Q88: try-except-else-finally -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="exceptions" data-qid="88">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#088</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">The Complete Flow: `try`, `except`, `else`, and `finally` execution order</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">MEDIUM</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm text-body-sm">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-semibold text-primary">try / except:</span>
+<p class="text-on-surface mt-space-2xs">Executes hazardous statement. Catches explicit exception subclasses.</p>
+<span class="font-semibold text-[#34D399] mt-space-sm block">else:</span>
+<p class="text-on-surface mt-space-2xs">Runs <strong>only if zero exceptions</strong> were raised in the try block.</p>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-semibold text-secondary">finally:</span>
+<p class="text-on-surface mt-space-2xs">Always executes unconditionally—even if an unhandled exception occurred or a <code class="font-code-sm">return</code> was hit inside the try block. Ideal for releasing sockets/file handles.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q149: Modern Debugging -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="exceptions" data-qid="149">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#149</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Production Debugging: `breakpoint()`, `pdb`, Post-Mortem Tracing</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-primary/10 text-primary">ADVANCED</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>Python 3.7 introduced built-in <code class="font-code-sm text-primary">breakpoint()</code>, calling <code class="font-code-sm">sys.breakpointhook()</code> (configurable via <code class="font-code-sm">PYTHONBREAKPOINT</code> env variable to plug in `ipdb` or `pdb`). Post-mortem debugging can be attached via <code class="font-code-sm">pdb.pm()</code> immediately following unhandled failures.</p>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 7: FILE HANDLING, FORMATS & OS -->
+<section class="space-y-space-md" data-cat-section="files" id="mod-files">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">07</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">File I/O, Formats &amp; OS</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q96 — Q105, Q114, Q115</span>
+</div>
+<!-- Q99: Context Managers -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="files" data-qid="99">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#099</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Context Managers: Implementing `__enter__` and `__exit__` for Resilient I/O</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-primary/10 text-primary">ADVANCED</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>The <code class="font-code-sm text-primary">with</code> statement manages setup and teardown phases of resource acquisition (RAII). It executes <code class="font-code-sm">__enter__</code>, assigns the result to variable alias, and guarantees execution of <code class="font-code-sm">__exit__(exc_type, exc_val, exc_tb)</code> even under fatal process crashes.</p>
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>class DatabaseTransaction:
+    def __enter__(self):
+        print("Acquiring lock &amp; starting transaction...")
+        return self
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if exc_type:
+            print(f"Rollback due to error: {exc_val}")
+            return False  # Re-raise exception
+        print("Commit transaction cleanly.")
+        return True</code></pre>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 8: MODULES & PACKAGES -->
+<section class="space-y-space-md" data-cat-section="ecosystem" id="mod-ecosystem">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">08</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Modules, Packages &amp; Ecosystem</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q106 — Q113, Q146</span>
+</div>
+<!-- Q109: if __name__ == '__main__' -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="ecosystem" data-qid="109">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#109</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">What does `if __name__ == "__main__":` do under the hood?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">EASY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>CPython sets the built-in variable <code class="font-code-sm text-primary">__name__</code> to <code class="font-code-sm">"__main__"</code> whenever a script is executed directly from the terminal CLI. If the file is imported by another module, <code class="font-code-sm">__name__</code> is set to the module's file name. This guard prevents executable boilerplate from running during unit tests or library imports.</p>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 9: ADVANCED PYTHON, MEMORY & CONCURRENCY -->
+<section class="space-y-space-md" data-cat-section="advanced" id="mod-advanced">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">09</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Advanced Python, Memory &amp; GIL</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q116 — Q130, Q147</span>
+</div>
+<!-- Q127: Garbage Collection -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="advanced" data-qid="127">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#127</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Memory Management: Reference Counting vs. Generational Cyclic GC</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#F87171]/10 text-[#F87171]">SENIOR / ARCHITECT</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>CPython memory is managed via a two-layer hybrid strategy:</p>
+<ol class="list-decimal list-inside space-y-space-xs text-body-sm">
+<li><strong>Reference Counting (Primary):</strong> Every <code class="font-code-sm">PyObject</code> contains <code class="font-code-sm">ob_refcnt</code>. When it drops to zero, deallocation is immediate.</li>
+<li><strong>Cyclic Garbage Collector (Secondary):</strong> Solves cyclic pointer loops (e.g. <code class="font-code-sm">a.child = b; b.parent = a</code>). Operates via 3 generations (Gen 0, 1, 2) based on weak generational hypothesis (young objects die fast).</li>
+</ol>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Q129: The GIL -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="advanced" data-qid="129">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#129</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">What is the Global Interpreter Lock (GIL) and how to bypass it in production?</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#F87171]/10 text-[#F87171]">SENIOR / ARCHITECT</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<p>The <strong>GIL</strong> is a mutual-exclusion lock preventing multiple native OS threads from executing Python bytecode simultaneously within a single CPython process. It prevents race conditions on CPython's internal non-thread-safe reference counting system.</p>
+<div class="p-space-sm bg-surface-container rounded-lg text-body-sm space-y-space-xs">
+<span class="font-semibold text-primary">Strategies to Bypass GIL:</span>
+<ul class="list-disc list-inside space-y-space-2xs text-on-surface">
+<li><code class="font-code-sm">multiprocessing</code>: Allocates independent OS processes with distinct Python heaps and memory addresses.</li>
+<li><code class="font-code-sm">C/Rust extensions</code>: Release the GIL via <code class="font-code-sm">Py_BEGIN_ALLOW_THREADS</code> during computation.</li>
+<li>Python 3.13 free-threaded build (PEP 703 experimental no-GIL mode).</li>
+</ul>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+<!-- MODULE 10: 15 HIGH-FREQUENCY CODING CHALLENGES -->
+<section class="space-y-space-md" data-cat-section="algorithms" id="mod-algorithms">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-secondary/10 text-secondary font-label-badge text-label-badge">10</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">15 High-Frequency Live Coding Challenges</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q131 — Q145</span>
+</div>
+<!-- 15 Coding Accordions Grid -->
+<div class="space-y-space-sm">
+<!-- Q131: Reverse a Number -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="algorithms" data-qid="131">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#131</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Code: Reverse an Integer Handling Signed Boundaries</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">O(log N)</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>def reverse_int(n: int) -&gt; int:
+    sign = -1 if n &lt; 0 else 1
+    rev = int(str(abs(n))[::-1]) * sign
+    # 32-bit signed integer boundary clamp:
+    return rev if -(2**31) &lt;= rev &lt;= 2**31 - 1 else 0</code></pre>
+</div>
+</div>
+</article>
+<!-- Q135: Fibonacci Series -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="algorithms" data-qid="135">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#135</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Code: Production Fibonacci Generator (O(N) Time, O(1) Memory)</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-secondary/10 text-secondary">GENERATOR</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>from typing import Iterator
+
+def fibonacci(n: int) -&gt; Iterator[int]:
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+# Usage: list(fibonacci(7)) -&gt; [0, 1, 1, 2, 3, 5, 8]</code></pre>
+</div>
+</div>
+</article>
+<!-- Q138: Missing Number -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="algorithms" data-qid="138">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#138</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Code: Find Missing Number in [0, n] Array (Gauss Sum Formula)</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">O(1) SPACE</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>def find_missing_number(nums: list[int]) -&gt; int:
+    n = len(nums)
+    expected_sum = n * (n + 1) // 2
+    return expected_sum - sum(nums)</code></pre>
+</div>
+</div>
+</article>
+<!-- Q141: Deduplicate Preserving Order -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="algorithms" data-qid="141">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#141</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Code: Deduplicate a List While Preserving Original Order</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">O(N)</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code># Python 3.7+ preserves dictionary insertion order:
+def deduplicate_stable(seq: list) -&gt; list:
+    return list(dict.fromkeys(seq))</code></pre>
+</div>
+</div>
+</article>
+<!-- Q144: Anagram Check -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="algorithms" data-qid="144">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#144</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Code: Validate Valid Anagram (Frequency Hashing)</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#34D399]/10 text-[#34D399]">O(N)</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<div class="bg-surface-container rounded-lg p-space-md">
+<pre class="font-code-sm text-code-sm text-on-surface overflow-x-auto"><code>from collections import Counter
+
+def is_anagram(s1: str, s2: str) -&gt; bool:
+    return Counter(s1) == Counter(s2)</code></pre>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- MODULE 11: PRODUCTION, ARCHITECTURE & SECURITY -->
+<section class="space-y-space-md" data-cat-section="production" id="mod-production">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-label-badge text-label-badge">11</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Production Engineering &amp; Security</h2>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container px-space-sm py-space-2xs rounded">Q148 — Q153</span>
+</div>
+<!-- Q152: Security -->
+<article class="q-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm" data-cat="production" data-qid="152">
+<button class="q-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0 pr-space-md">
+<span class="font-label-kbd text-label-kbd text-outline shrink-0">#152</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Hardening Python Services: Preventing Insecure Deserialization &amp; SQL Injection</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs rounded bg-[#F87171]/10 text-[#F87171]">SECURITY</span>
+<span class="material-symbols-outlined chevron text-outline text-[20px] transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="q-body hidden p-space-md bg-surface-container-lowest/50 text-body-md text-on-surface-variant space-y-space-md">
+<ul class="space-y-space-xs text-body-sm">
+<li><strong class="text-error">Never unpickle untrusted bytes:</strong> Python's <code class="font-code-sm">pickle</code> module can execute arbitrary shell commands via crafted <code class="font-code-sm">__reduce__</code> payloads. Use JSON or Protocol Buffers.</li>
+<li><strong class="text-error">Never format raw strings into SQL:</strong> Always use parameterized query placeholders (<code class="font-code-sm">cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))</code>).</li>
+<li><strong class="text-secondary">Avoid `eval()` / `exec()`:</strong> Use AST parsing via <code class="font-code-sm">ast.literal_eval</code> when parsing static literals.</li>
+</ul>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="q-master-cb accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-badge text-label-badge text-outline">Mark as Mastered</span>
+</label>
+</div>
+</div>
+</article>
+</section>
+</div>
+<!-- Quick Jump Sidebar (3 cols on XL) -->
+<div class="hidden xl:block xl:col-span-3">
+<div class="sticky top-40 space-y-space-md bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">Jump to Module</span>
+<span class="font-label-kbd text-label-kbd text-primary">11 MODULES</span>
+</div>
+<nav class="space-y-space-2xs text-body-sm">
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-core">
+<span>01. Core Basics</span>
+<span class="font-label-kbd text-label-kbd text-outline">21 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-flow">
+<span>02. Control Flow</span>
+<span class="font-label-kbd text-label-kbd text-outline">10 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-functions">
+<span>03. Functions &amp; Scoping</span>
+<span class="font-label-kbd text-label-kbd text-outline">15 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-ds">
+<span>04. Data Structures</span>
+<span class="font-label-kbd text-label-kbd text-outline">25 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-oop">
+<span>05. OOP &amp; Classes</span>
+<span class="font-label-kbd text-label-kbd text-outline">15 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-exceptions">
+<span>06. Exceptions &amp; Debug</span>
+<span class="font-label-kbd text-label-kbd text-outline">11 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-files">
+<span>07. File I/O &amp; Formats</span>
+<span class="font-label-kbd text-label-kbd text-outline">12 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-ecosystem">
+<span>08. Modules &amp; Packages</span>
+<span class="font-label-kbd text-label-kbd text-outline">9 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-advanced">
+<span>09. Memory &amp; GIL</span>
+<span class="font-label-kbd text-label-kbd text-outline">16 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-algorithms">
+<span>10. Live Coding</span>
+<span class="font-label-kbd text-label-kbd text-secondary">15 Qs</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#mod-production">
+<span>11. Production Arch</span>
+<span class="font-label-kbd text-label-kbd text-outline">4 Qs</span>
+</a>
+</nav>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Accordion Toggle
+      const toggles = document.querySelectorAll('.q-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const body = toggle.nextElementSibling;
+          const chevron = toggle.querySelector('.chevron');
+          const isHidden = body.classList.contains('hidden');
+          
+          if (isHidden) {
+            body.classList.remove('hidden');
+            chevron.classList.add('rotate-180');
+          } else {
+            body.classList.add('hidden');
+            chevron.classList.remove('rotate-180');
+          }
+        });
+      });
+
+      // 2. Expand / Collapse All
+      const toggleAllBtn = document.getElementById('btn-toggle-all');
+      const toggleAllLabel = document.getElementById('toggle-all-label');
+      let allExpanded = false;
+
+      toggleAllBtn.addEventListener('click', () => {
+        allExpanded = !allExpanded;
+        const bodies = document.querySelectorAll('.q-body');
+        const chevrons = document.querySelectorAll('.chevron');
+
+        bodies.forEach(b => {
+          if (allExpanded) {
+            b.classList.remove('hidden');
+          } else {
+            b.classList.add('hidden');
+          }
+        });
+
+        chevrons.forEach(c => {
+          if (allExpanded) {
+            c.classList.add('rotate-180');
+          } else {
+            c.classList.remove('rotate-180');
+          }
+        });
+
+        toggleAllLabel.textContent = allExpanded ? 'Collapse All' : 'Expand All';
+      });
+
+      // 3. Category Filter
+      const catPills = document.querySelectorAll('.cat-pill');
+      const sections = document.querySelectorAll('[data-cat-section]');
+      const cards = document.querySelectorAll('.q-card');
+
+      catPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          catPills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+            p.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+
+          const cat = pill.getAttribute('data-cat');
+          if (cat === 'all') {
+            sections.forEach(s => s.classList.remove('hidden'));
+            cards.forEach(c => c.classList.remove('hidden'));
+          } else {
+            sections.forEach(s => {
+              if (s.getAttribute('data-cat-section') === cat) {
+                s.classList.remove('hidden');
+              } else {
+                s.classList.add('hidden');
+              }
+            });
+            cards.forEach(c => {
+              if (c.getAttribute('data-cat') === cat) {
+                c.classList.remove('hidden');
+              } else {
+                c.classList.add('hidden');
+              }
+            });
+          }
+        });
+      });
+
+      // 4. Live Search
+      const searchInput = document.getElementById('handbook-search');
+      const clearSearchBtn = document.getElementById('clear-search');
+
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (query.length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        cards.forEach(card => card.classList.remove('hidden'));
+        searchInput.focus();
+      });
+
+      // 5. Reset All Filters
+      document.getElementById('btn-reset-filters').addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        document.querySelector('.cat-pill[data-cat="all"]').click();
+        cards.forEach(card => card.classList.remove('hidden'));
+        sections.forEach(s => s.classList.remove('hidden'));
+      });
+
+      // 6. Copy Code Action
+      document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const pre = btn.closest('.space-y-space-xs').querySelector('pre');
+          if (pre) {
+            navigator.clipboard.writeText(pre.innerText);
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = `<span class="material-symbols-outlined text-[14px] text-[#34D399]">check</span> Copied!`;
+            setTimeout(() => {
+              btn.innerHTML = originalHTML;
+            }, 1800);
+          }
+        });
+      });
+
+      // 7. Mastered Progress Calculation
+      let mastered = 24;
+      const total = 153;
+      const countEl = document.getElementById('mastered-count');
+      const ringEl = document.getElementById('progress-ring');
+
+      document.querySelectorAll('.q-master-cb').forEach(cb => {
+        cb.addEventListener('change', () => {
+          if (cb.checked) {
+            mastered++;
+          } else {
+            mastered = Math.max(0, mastered - 1);
+          }
+          countEl.textContent = mastered;
+          const pct = Math.round((mastered / total) * 100);
+          ringEl.setAttribute('stroke-dasharray', `${pct}, 100`);
+        });
+      });
+    });
+  </script>
+</div></main></div></body></html>
