@@ -1,0 +1,1078 @@
+{
+  "title": "Python Interview Question Bank",
+  "version": "1.0",
+  "total": 153,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is Python? Why is it popular?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Python is a high-level, interpreted, general-purpose language known for readable syntax and a large ecosystem. It is popular because it is productive, versatile, and widely used in web development, automation, data, AI, scripting, and backend systems."
+    },
+    {
+      "id": 2,
+      "question": "What are the features of Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Key features include readable syntax, dynamic typing, automatic memory management, a large standard library, cross-platform support, object-oriented programming, and a large package ecosystem."
+    },
+    {
+      "id": 3,
+      "question": "Difference between Python 2 and Python 3.",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Python 3 is the modern version. It uses print() as a function, has Unicode strings by default, and uses / for true division. Python 2 reached end of life in 2020."
+    },
+    {
+      "id": 4,
+      "question": "What are variables in Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "A variable is a name bound to an object. Python variables do not need an explicit type declaration."
+    },
+    {
+      "id": 5,
+      "question": "What are keywords in Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Keywords are reserved words with special meaning in Python, such as if, for, class, def, return, and import."
+    },
+    {
+      "id": 6,
+      "question": "What are data types in Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Common built-in types include int, float, complex, bool, str, list, tuple, set, dict, bytes, and NoneType."
+    },
+    {
+      "id": 7,
+      "question": "Difference between list, tuple, set, and dictionary.",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "A list is ordered and mutable, a tuple is ordered and immutable, a set stores unique elements, and a dictionary stores key-value pairs."
+    },
+    {
+      "id": 8,
+      "question": "What is dynamic typing?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Python determines an object's type at runtime, and a variable can later refer to an object of another type."
+    },
+    {
+      "id": 9,
+      "question": "What is type casting?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Type casting means converting a value to another type, such as int('10'), float(5), or str(100)."
+    },
+    {
+      "id": 10,
+      "question": "What is None in Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "None is Python's singleton value representing the absence of a value. Its type is NoneType."
+    },
+    {
+      "id": 11,
+      "question": "What is indentation and why is it important?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Indentation defines code blocks in Python. Incorrect indentation can cause an IndentationError or change the structure of the program."
+    },
+    {
+      "id": 12,
+      "question": "What are comments in Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Comments are notes ignored by Python. A single-line comment starts with #."
+    },
+    {
+      "id": 13,
+      "question": "What is PEP 8?",
+      "category": "Core Python",
+      "level": "Intermediate",
+      "answer": "PEP 8 is Python's style guide. It recommends consistent formatting and naming to make code easier to read and maintain."
+    },
+    {
+      "id": 14,
+      "question": "Difference between = and ==.",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "= assigns a value. == compares two values for equality."
+    },
+    {
+      "id": 15,
+      "question": "What is id() function?",
+      "category": "Core Python",
+      "level": "Intermediate",
+      "answer": "id() returns an integer identifying an object during its lifetime. It can be used to inspect object identity."
+    },
+    {
+      "id": 16,
+      "question": "What is input() and print()?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "input() reads text from standard input and returns a string. print() writes values to standard output."
+    },
+    {
+      "id": 17,
+      "question": "What are operators in Python?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Operators perform operations such as arithmetic, comparison, assignment, logical operations, membership, identity, and bitwise operations."
+    },
+    {
+      "id": 18,
+      "question": "Difference between is and ==.",
+      "category": "Core Python",
+      "level": "Intermediate",
+      "answer": "== compares values using equality semantics. is checks whether two references point to the same object. Use is commonly with None."
+    },
+    {
+      "id": 19,
+      "question": "What is mutable and immutable?",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Mutable objects can be changed after creation. Immutable objects cannot be changed in place."
+    },
+    {
+      "id": 20,
+      "question": "Examples of mutable and immutable objects.",
+      "category": "Core Python",
+      "level": "Beginner",
+      "answer": "Lists, dictionaries, and sets are mutable. Integers, floats, strings, tuples, and frozensets are immutable."
+    },
+    {
+      "id": 21,
+      "question": "What is if-elif-else?",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "It is conditional control flow. Python checks if, then elif conditions, and finally executes else when no earlier condition is true."
+    },
+    {
+      "id": 22,
+      "question": "What is a loop?",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "A loop repeats a block of code while iterating over data or while a condition remains true."
+    },
+    {
+      "id": 23,
+      "question": "Difference between for and while.",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "for is commonly used to iterate over an iterable. while repeats while its condition is true."
+    },
+    {
+      "id": 24,
+      "question": "What is break, continue, and pass?",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "break exits the loop, continue skips to the next iteration, and pass does nothing and is used as a placeholder."
+    },
+    {
+      "id": 25,
+      "question": "What is range()?",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "range() creates an immutable range object representing a sequence of integers, commonly used with for loops."
+    },
+    {
+      "id": 26,
+      "question": "How does for-else work?",
+      "category": "Control Flow",
+      "level": "Intermediate",
+      "answer": "The else block runs when the for loop finishes normally. It does not run if the loop exits with break."
+    },
+    {
+      "id": 27,
+      "question": "What is nested loop?",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "A nested loop is a loop placed inside another loop."
+    },
+    {
+      "id": 28,
+      "question": "What is infinite loop?",
+      "category": "Control Flow",
+      "level": "Beginner",
+      "answer": "An infinite loop is a loop whose condition never becomes false and which is not otherwise terminated."
+    },
+    {
+      "id": 29,
+      "question": "Write a program to check even or odd.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Read an integer and check n % 2. If the remainder is 0, the number is even; otherwise it is odd."
+    },
+    {
+      "id": 30,
+      "question": "Write a program to find factorial.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Initialize fact = 1 and multiply it by each integer from 1 through n. For n >= 0, the result is n factorial."
+    },
+    {
+      "id": 31,
+      "question": "What is a function?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A function is a reusable block of code defined with def. It can accept arguments and optionally return a value."
+    },
+    {
+      "id": 32,
+      "question": "Difference between function and method.",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A function is a callable defined independently. A method is a function associated with a class or object and is typically called through that object or class."
+    },
+    {
+      "id": 33,
+      "question": "What are arguments and parameters?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "Parameters are names in a function definition. Arguments are the actual values passed when calling the function."
+    },
+    {
+      "id": 34,
+      "question": "Types of arguments in Python.",
+      "category": "Functions",
+      "level": "Intermediate",
+      "answer": "Python supports positional, keyword, default, variable-length positional (*args), and variable-length keyword (**kwargs) arguments."
+    },
+    {
+      "id": 35,
+      "question": "What is default argument?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A default argument has a value used when the caller does not provide that argument."
+    },
+    {
+      "id": 36,
+      "question": "What is keyword argument?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A keyword argument passes a value using the parameter name, such as calculate(price=100)."
+    },
+    {
+      "id": 37,
+      "question": "What is *args and **kwargs?",
+      "category": "Functions",
+      "level": "Intermediate",
+      "answer": "*args collects extra positional arguments into a tuple. **kwargs collects extra keyword arguments into a dictionary."
+    },
+    {
+      "id": 38,
+      "question": "What is lambda function?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A lambda is a small anonymous function written as an expression, for example lambda x: x * 2."
+    },
+    {
+      "id": 39,
+      "question": "Difference between lambda and normal function.",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A lambda is usually a short single-expression function. A def function can contain multiple statements, documentation, and more complex logic."
+    },
+    {
+      "id": 40,
+      "question": "What is recursion?",
+      "category": "Functions",
+      "level": "Intermediate",
+      "answer": "Recursion is when a function calls itself. It needs a base case to stop the recursive calls."
+    },
+    {
+      "id": 41,
+      "question": "What is return statement?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "return ends a function call and optionally sends a value back to the caller."
+    },
+    {
+      "id": 42,
+      "question": "What happens if function does not return anything?",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "If a function reaches the end without returning a value, it returns None."
+    },
+    {
+      "id": 43,
+      "question": "What is docstring?",
+      "category": "Functions",
+      "level": "Intermediate",
+      "answer": "A docstring is a string placed as the first statement in a module, class, or function to document it. It is available through __doc__."
+    },
+    {
+      "id": 44,
+      "question": "What is scope of variables?",
+      "category": "Functions",
+      "level": "Intermediate",
+      "answer": "Scope describes where a name can be accessed. Python resolves names through local, enclosing, global, and built-in scopes."
+    },
+    {
+      "id": 45,
+      "question": "Local vs global variables.",
+      "category": "Functions",
+      "level": "Beginner",
+      "answer": "A local variable belongs to a function's local scope. A global variable is defined at module level and can be read from functions; global is used to rebind it."
+    },
+    {
+      "id": 46,
+      "question": "How do you create a list?",
+      "category": "Lists",
+      "level": "Beginner",
+      "answer": "Use square brackets, for example numbers = [1, 2, 3]."
+    },
+    {
+      "id": 47,
+      "question": "Difference between append() and extend().",
+      "category": "Lists",
+      "level": "Beginner",
+      "answer": "append() adds one object as a single element. extend() adds each element from an iterable."
+    },
+    {
+      "id": 48,
+      "question": "Difference between remove() and pop().",
+      "category": "Lists",
+      "level": "Beginner",
+      "answer": "remove(value) deletes the first matching value. pop(index) removes and returns an element, using the last element by default."
+    },
+    {
+      "id": 49,
+      "question": "How to reverse a list?",
+      "category": "Lists",
+      "level": "Beginner",
+      "answer": "Use list.reverse() to modify the list, or list[::-1] to create a reversed copy."
+    },
+    {
+      "id": 50,
+      "question": "How to sort a list?",
+      "category": "Lists",
+      "level": "Beginner",
+      "answer": "Use list.sort() to sort in place or sorted(list) to return a new sorted list."
+    },
+    {
+      "id": 51,
+      "question": "Why tuples are immutable?",
+      "category": "Tuples",
+      "level": "Intermediate",
+      "answer": "Tuple immutability means their element bindings cannot be changed after creation. This makes tuples useful for fixed collections and allows them to be hashable when their elements are hashable."
+    },
+    {
+      "id": 52,
+      "question": "How to convert tuple to list?",
+      "category": "Tuples",
+      "level": "Beginner",
+      "answer": "Use list(my_tuple)."
+    },
+    {
+      "id": 53,
+      "question": "What is a set?",
+      "category": "Sets",
+      "level": "Beginner",
+      "answer": "A set is an unordered collection of unique hashable elements."
+    },
+    {
+      "id": 54,
+      "question": "Difference between set and list.",
+      "category": "Sets",
+      "level": "Beginner",
+      "answer": "Lists preserve sequence and allow duplicates. Sets contain unique elements and are optimized for membership testing."
+    },
+    {
+      "id": 55,
+      "question": "What is frozenset?",
+      "category": "Sets",
+      "level": "Intermediate",
+      "answer": "frozenset is an immutable set. It can be used as a dictionary key or as an element of another set when its members are hashable."
+    },
+    {
+      "id": 56,
+      "question": "What is dictionary?",
+      "category": "Dictionary",
+      "level": "Beginner",
+      "answer": "A dictionary maps hashable keys to values, for example {'name': 'Sagar', 'age': 26}."
+    },
+    {
+      "id": 57,
+      "question": "Difference between list and dictionary.",
+      "category": "Dictionary",
+      "level": "Beginner",
+      "answer": "A list stores elements by position. A dictionary stores values associated with keys."
+    },
+    {
+      "id": 58,
+      "question": "How to access dictionary keys and values?",
+      "category": "Dictionary",
+      "level": "Beginner",
+      "answer": "Use dict[key] for a known key, and keys(), values(), or items() to iterate through dictionary contents."
+    },
+    {
+      "id": 59,
+      "question": "What is get() method?",
+      "category": "Dictionary",
+      "level": "Beginner",
+      "answer": "dict.get(key, default) returns the value for a key or a default value if the key is missing, without raising KeyError."
+    },
+    {
+      "id": 60,
+      "question": "What is dictionary comprehension?",
+      "category": "Dictionary",
+      "level": "Intermediate",
+      "answer": "It is a compact way to build dictionaries, such as {x: x*x for x in range(5)}."
+    },
+    {
+      "id": 61,
+      "question": "What is string?",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "A string is an immutable sequence of Unicode characters, usually written with single, double, or triple quotes."
+    },
+    {
+      "id": 62,
+      "question": "Are strings mutable?",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "No. Strings are immutable. Operations that appear to modify a string create a new string."
+    },
+    {
+      "id": 63,
+      "question": "What is string slicing?",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "Slicing extracts part of a sequence using start:stop:step, for example text[1:5]."
+    },
+    {
+      "id": 64,
+      "question": "Difference between find() and index().",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "find() returns -1 when the substring is absent. index() raises ValueError when it is absent."
+    },
+    {
+      "id": 65,
+      "question": "Difference between split() and join().",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "split() breaks a string into a list. join() combines an iterable of strings into one string."
+    },
+    {
+      "id": 66,
+      "question": "What is f-string?",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "An f-string is a formatted string literal that evaluates expressions inside braces, such as f'Hello {name}'."
+    },
+    {
+      "id": 67,
+      "question": "How to reverse a string?",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "Use slicing: text[::-1]."
+    },
+    {
+      "id": 68,
+      "question": "Count frequency of characters in string.",
+      "category": "Strings",
+      "level": "Intermediate",
+      "answer": "Iterate through the string and count each character, or use collections.Counter(text) for a concise solution."
+    },
+    {
+      "id": 69,
+      "question": "Check palindrome string.",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "A string is a palindrome when it equals its reverse, so text == text[::-1] is a simple check."
+    },
+    {
+      "id": 70,
+      "question": "Difference between strip(), lstrip(), rstrip().",
+      "category": "Strings",
+      "level": "Beginner",
+      "answer": "strip() removes leading and trailing characters, lstrip() removes leading characters, and rstrip() removes trailing characters."
+    },
+    {
+      "id": 71,
+      "question": "What is OOP?",
+      "category": "OOP",
+      "level": "Beginner",
+      "answer": "Object-oriented programming organizes software around objects that combine state and behavior."
+    },
+    {
+      "id": 72,
+      "question": "What is class and object?",
+      "category": "OOP",
+      "level": "Beginner",
+      "answer": "A class is a blueprint defining attributes and behavior. An object is an instance created from that class."
+    },
+    {
+      "id": 73,
+      "question": "What is __init__()?",
+      "category": "OOP",
+      "level": "Beginner",
+      "answer": "__init__() is an initializer method called automatically after an object is created. It commonly sets instance attributes."
+    },
+    {
+      "id": 74,
+      "question": "What is self?",
+      "category": "OOP",
+      "level": "Beginner",
+      "answer": "self refers to the current instance inside an instance method. It is how the method accesses that object's attributes and other methods."
+    },
+    {
+      "id": 75,
+      "question": "What is inheritance?",
+      "category": "OOP",
+      "level": "Beginner",
+      "answer": "Inheritance lets a child class reuse and extend attributes and methods from a parent class."
+    },
+    {
+      "id": 76,
+      "question": "Types of inheritance in Python.",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Common forms are single, multiple, multilevel, hierarchical, and hybrid inheritance."
+    },
+    {
+      "id": 77,
+      "question": "What is method overriding?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Method overriding occurs when a child class provides its own implementation of a method inherited from a parent class."
+    },
+    {
+      "id": 78,
+      "question": "What is polymorphism?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Polymorphism allows the same interface or operation to work with objects of different types."
+    },
+    {
+      "id": 79,
+      "question": "What is encapsulation?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Encapsulation groups data and behavior and controls how implementation details are exposed. Python uses conventions such as _name and name mangling for __name."
+    },
+    {
+      "id": 80,
+      "question": "What is abstraction?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Abstraction exposes essential behavior while hiding implementation details. Python can implement formal abstractions with abc."
+    },
+    {
+      "id": 81,
+      "question": "What are access specifiers in Python?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Python does not enforce Java-style public/protected/private access modifiers. Naming conventions use name, _name, and __name for different levels of intended access."
+    },
+    {
+      "id": 82,
+      "question": "What is constructor and destructor?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Python commonly uses __init__() as an initializer. __del__() is a finalizer hook, but it should not be treated as a reliable deterministic destructor."
+    },
+    {
+      "id": 83,
+      "question": "What is multiple inheritance?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Multiple inheritance means a class inherits from more than one parent class, such as class D(B, C)."
+    },
+    {
+      "id": 84,
+      "question": "What is method overloading?",
+      "category": "OOP",
+      "level": "Intermediate",
+      "answer": "Python does not support traditional signature-based method overloading. A later definition replaces an earlier one; flexible arguments or singledispatch can provide similar behavior."
+    },
+    {
+      "id": 85,
+      "question": "Difference between class variable and instance variable.",
+      "category": "OOP",
+      "level": "Beginner",
+      "answer": "A class variable is shared by instances through the class. An instance variable belongs to a particular object."
+    },
+    {
+      "id": 86,
+      "question": "What is exception?",
+      "category": "Exception Handling",
+      "level": "Beginner",
+      "answer": "An exception is an event represented by an object that interrupts normal execution when an exceptional condition occurs."
+    },
+    {
+      "id": 87,
+      "question": "Difference between error and exception.",
+      "category": "Exception Handling",
+      "level": "Intermediate",
+      "answer": "Error is a broad term for a problem. Exceptions are runtime conditions that Python can raise and handle with try/except."
+    },
+    {
+      "id": 88,
+      "question": "What is try-except block?",
+      "category": "Exception Handling",
+      "level": "Beginner",
+      "answer": "try contains code that may raise an exception. except handles matching exceptions."
+    },
+    {
+      "id": 89,
+      "question": "What is finally?",
+      "category": "Exception Handling",
+      "level": "Beginner",
+      "answer": "finally runs after try/except processing whether an exception occurred or not, commonly for cleanup."
+    },
+    {
+      "id": 90,
+      "question": "What is raise keyword?",
+      "category": "Exception Handling",
+      "level": "Intermediate",
+      "answer": "raise explicitly raises an exception, for example raise ValueError('invalid value')."
+    },
+    {
+      "id": 91,
+      "question": "What are built-in exceptions?",
+      "category": "Exception Handling",
+      "level": "Beginner",
+      "answer": "Examples include ValueError, TypeError, KeyError, IndexError, FileNotFoundError, ZeroDivisionError, and RuntimeError."
+    },
+    {
+      "id": 92,
+      "question": "How to handle multiple exceptions?",
+      "category": "Exception Handling",
+      "level": "Intermediate",
+      "answer": "Use separate except clauses or catch a tuple of exception types when they should be handled the same way."
+    },
+    {
+      "id": 93,
+      "question": "What is custom exception?",
+      "category": "Exception Handling",
+      "level": "Intermediate",
+      "answer": "A custom exception is a user-defined class, normally inheriting from Exception, that represents an application-specific failure."
+    },
+    {
+      "id": 94,
+      "question": "What happens if exception is not handled?",
+      "category": "Exception Handling",
+      "level": "Beginner",
+      "answer": "The exception propagates up the call stack. If nothing handles it, Python prints a traceback and terminates that execution path."
+    },
+    {
+      "id": 95,
+      "question": "What is assertion?",
+      "category": "Exception Handling",
+      "level": "Intermediate",
+      "answer": "assert checks a condition during development and raises AssertionError if the condition is false. Assertions can be disabled with optimized execution."
+    },
+    {
+      "id": 96,
+      "question": "What is file handling?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "File handling means opening, reading, writing, appending, and closing files using Python's file APIs."
+    },
+    {
+      "id": 97,
+      "question": "Modes of file (r, w, a, rb)?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "r reads, w writes and truncates, a appends, and rb reads binary data. Other modes can combine reading, writing, creation, and binary access."
+    },
+    {
+      "id": 98,
+      "question": "Difference between write() and writelines().",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "write() writes one string. writelines() writes an iterable of strings and does not automatically add newline characters."
+    },
+    {
+      "id": 99,
+      "question": "What is with statement?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "with manages a context manager and ensures resources such as files are cleaned up even when an exception occurs."
+    },
+    {
+      "id": 100,
+      "question": "How to read a file line by line?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "Use for line in file: after opening the file, or call file.readline() repeatedly."
+    },
+    {
+      "id": 101,
+      "question": "What is file pointer?",
+      "category": "File Handling",
+      "level": "Intermediate",
+      "answer": "The file pointer is the current position used for reading or writing. tell() reports it and seek() changes it."
+    },
+    {
+      "id": 102,
+      "question": "Difference between text file and binary file.",
+      "category": "File Handling",
+      "level": "Intermediate",
+      "answer": "Text files are handled as characters using an encoding. Binary files expose raw bytes and are used for data such as images."
+    },
+    {
+      "id": 103,
+      "question": "How to copy content from one file to another?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "Open the source for reading and destination for writing, then copy the contents. shutil.copyfile() is also available for files."
+    },
+    {
+      "id": 104,
+      "question": "What is CSV file?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "CSV stands for Comma-Separated Values. It stores tabular data as rows and fields."
+    },
+    {
+      "id": 105,
+      "question": "How to read CSV in Python?",
+      "category": "File Handling",
+      "level": "Beginner",
+      "answer": "Use Python's csv module, for example csv.reader() or csv.DictReader(), and open the file with newline='' where appropriate."
+    },
+    {
+      "id": 106,
+      "question": "What is module?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "A module is a Python file containing code such as functions, classes, and variables that can be imported."
+    },
+    {
+      "id": 107,
+      "question": "Difference between module and package.",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "A module is generally one .py file. A package organizes related modules in a directory and can expose a package namespace."
+    },
+    {
+      "id": 108,
+      "question": "What is import statement?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "import loads a module or package so its names can be used by the current program."
+    },
+    {
+      "id": 109,
+      "question": "What is __name__ == \"__main__\"?",
+      "category": "Modules & Packages",
+      "level": "Intermediate",
+      "answer": "When a file is run directly, its __name__ is '__main__'. The guard lets code run only when the file is executed directly, not imported."
+    },
+    {
+      "id": 110,
+      "question": "What is pip?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "pip is the standard package installer for Python environments and is commonly used to install packages from Python package indexes."
+    },
+    {
+      "id": 111,
+      "question": "What is virtual environment?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "A virtual environment is an isolated Python environment with its own interpreter and installed packages, helping projects avoid dependency conflicts."
+    },
+    {
+      "id": 112,
+      "question": "Difference between NumPy and Pandas.",
+      "category": "Modules & Packages",
+      "level": "Intermediate",
+      "answer": "NumPy provides fast array and numerical operations. Pandas provides labeled tabular data structures and data analysis tools built around arrays."
+    },
+    {
+      "id": 113,
+      "question": "What is standard library?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "The standard library is the collection of modules distributed with Python, covering tasks such as files, dates, JSON, math, and networking."
+    },
+    {
+      "id": 114,
+      "question": "What is os module?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "os provides interfaces for operating-system tasks such as paths, environment variables, directories, and process-related operations."
+    },
+    {
+      "id": 115,
+      "question": "What is sys module?",
+      "category": "Modules & Packages",
+      "level": "Beginner",
+      "answer": "sys provides access to interpreter and runtime information such as command-line arguments, module search paths, and standard streams."
+    },
+    {
+      "id": 116,
+      "question": "What is iterator?",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "An iterator is an object implementing __iter__() and __next__(), producing values one at a time until StopIteration."
+    },
+    {
+      "id": 117,
+      "question": "What is iterable?",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "An iterable is an object that can return an iterator, typically through __iter__, so it can be used in a for loop."
+    },
+    {
+      "id": 118,
+      "question": "Difference between iterator and iterable.",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "An iterable can produce an iterator. An iterator keeps iteration state and returns the next value with next()."
+    },
+    {
+      "id": 119,
+      "question": "What is generator?",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "A generator is a lazy iterator produced by a generator function or expression. It computes values as requested instead of storing them all at once."
+    },
+    {
+      "id": 120,
+      "question": "Difference between generator and function.",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "A normal function usually runs to completion when called. A generator function containing yield returns a generator and can suspend and resume execution."
+    },
+    {
+      "id": 121,
+      "question": "What is yield keyword?",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "yield produces a value from a generator and suspends its execution so it can resume later with its state preserved."
+    },
+    {
+      "id": 122,
+      "question": "What is decorator?",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "A decorator is a callable that takes a function or class and returns a modified or wrapped callable, commonly used for cross-cutting behavior."
+    },
+    {
+      "id": 123,
+      "question": "Types of decorators.",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "Common examples include function decorators, class decorators, method decorators such as @staticmethod and @classmethod, and property-related decorators."
+    },
+    {
+      "id": 124,
+      "question": "What is closure?",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "A closure is an inner function that retains access to variables from its enclosing scope even after the outer function has returned."
+    },
+    {
+      "id": 125,
+      "question": "What is shallow copy and deep copy?",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "A shallow copy creates a new outer object but keeps references to nested objects. A deep copy recursively copies nested objects."
+    },
+    {
+      "id": 126,
+      "question": "Difference between copy() and deepcopy().",
+      "category": "Advanced Python",
+      "level": "Intermediate",
+      "answer": "copy.copy() performs a shallow copy. copy.deepcopy() recursively copies nested objects, subject to object-specific behavior."
+    },
+    {
+      "id": 127,
+      "question": "What is garbage collection?",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "Python manages memory automatically. CPython primarily uses reference counting plus a cyclic garbage collector to reclaim unreachable reference cycles."
+    },
+    {
+      "id": 128,
+      "question": "What is memory management in Python?",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "Python manages object allocation and reclamation through its runtime memory manager, reference counting, garbage collection, allocators, and object-specific strategies."
+    },
+    {
+      "id": 129,
+      "question": "What is GIL?",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "In standard CPython builds, the Global Interpreter Lock traditionally prevents multiple threads from executing Python bytecode simultaneously. It limits CPU-bound thread parallelism, while I/O and some native operations can release the lock."
+    },
+    {
+      "id": 130,
+      "question": "Multithreading vs multiprocessing.",
+      "category": "Advanced Python",
+      "level": "Advanced",
+      "answer": "Threads share one process's memory and are useful for I/O-bound concurrency. Processes have separate memory and can provide CPU parallelism, at the cost of higher communication overhead."
+    },
+    {
+      "id": 131,
+      "question": "Reverse a number.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "A common approach repeatedly takes n % 10, appends that digit to the result, then removes the last digit with integer division by 10."
+    },
+    {
+      "id": 132,
+      "question": "Find largest element in list.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Use max(numbers) or iterate through the list while maintaining the largest value seen so far."
+    },
+    {
+      "id": 133,
+      "question": "Find duplicate elements in list.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Track seen elements in a set and collect an element when it has already appeared."
+    },
+    {
+      "id": 134,
+      "question": "Count vowels in string.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Iterate through the string and increment a counter when a character is in a set such as {'a','e','i','o','u'}."
+    },
+    {
+      "id": 135,
+      "question": "Fibonacci series.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Start with a=0 and b=1, output a, then update a,b = b,a+b for each requested term."
+    },
+    {
+      "id": 136,
+      "question": "Check prime number.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "A number greater than 1 is prime if it has no divisor from 2 through its square root."
+    },
+    {
+      "id": 137,
+      "question": "Swap two numbers without temp variable.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Python supports tuple unpacking: a, b = b, a."
+    },
+    {
+      "id": 138,
+      "question": "Find missing number in list.",
+      "category": "Coding",
+      "level": "Intermediate",
+      "answer": "For a list containing values from 1 through n with one missing, compare n*(n+1)//2 with sum(numbers), or use XOR."
+    },
+    {
+      "id": 139,
+      "question": "Sort dictionary by values.",
+      "category": "Coding",
+      "level": "Intermediate",
+      "answer": "Use sorted(d.items(), key=lambda item: item[1]) to produce key-value pairs sorted by value."
+    },
+    {
+      "id": 140,
+      "question": "Count word frequency in string.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Split the text into words and use a dictionary or collections.Counter to count each word."
+    },
+    {
+      "id": 141,
+      "question": "Remove duplicates from list.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "dict.fromkeys(items) preserves insertion order in modern Python, or use a set when order does not matter."
+    },
+    {
+      "id": 142,
+      "question": "Find second largest number.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "One approach is sorted(set(numbers))[-2], provided at least two distinct values exist. A single-pass approach can be more efficient."
+    },
+    {
+      "id": 143,
+      "question": "Merge two dictionaries.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Use merged = {**a, **b} or, in modern Python, merged = a | b. Values from the right dictionary win on duplicate keys."
+    },
+    {
+      "id": 144,
+      "question": "Check anagram.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Normalize the two strings if needed and compare sorted characters or use collections.Counter on both strings."
+    },
+    {
+      "id": 145,
+      "question": "Sum of digits of number.",
+      "category": "Coding",
+      "level": "Beginner",
+      "answer": "Repeatedly add n % 10 to a total and reduce n with integer division by 10."
+    },
+    {
+      "id": 146,
+      "question": "What happens when you install a package using pip?",
+      "category": "Python Internals",
+      "level": "Intermediate",
+      "answer": "pip resolves the requested package and dependencies, downloads compatible distributions, and installs their files into the active environment. It may also record package metadata."
+    },
+    {
+      "id": 147,
+      "question": "How Python code is executed internally?",
+      "category": "Python Internals",
+      "level": "Advanced",
+      "answer": "Python source is parsed and compiled to bytecode, then executed by the Python runtime. Exact implementation details depend on the Python implementation."
+    },
+    {
+      "id": 148,
+      "question": "Explain MVC in Python projects.",
+      "category": "Architecture",
+      "level": "Intermediate",
+      "answer": "MVC separates application responsibilities into Model for data/business state, View for presentation, and Controller for request/input flow. Python web frameworks may use related patterns with different terminology."
+    },
+    {
+      "id": 149,
+      "question": "How do you debug Python code?",
+      "category": "Development",
+      "level": "Beginner",
+      "answer": "Reproduce the issue, inspect the traceback, use logging or print statements for simple cases, and use a debugger such as pdb or an IDE debugger for step-by-step inspection."
+    },
+    {
+      "id": 150,
+      "question": "How do you write production-ready Python code?",
+      "category": "Development",
+      "level": "Advanced",
+      "answer": "Use clear structure, tests, type hints where useful, logging, configuration management, dependency isolation, input validation, error handling, security practices, linting, formatting, monitoring, and documentation."
+    },
+    {
+      "id": 151,
+      "question": "Difference between scripting and programming language.",
+      "category": "Core Python",
+      "level": "Intermediate",
+      "answer": "Scripting usually emphasizes automating tasks and orchestrating systems, while programming is the broader activity of creating software. Python can be used for both."
+    },
+    {
+      "id": 152,
+      "question": "How do you secure Python code?",
+      "category": "Security",
+      "level": "Advanced",
+      "answer": "Validate untrusted input, avoid unsafe evaluation and shell construction, protect secrets, use least privilege, keep dependencies updated, enforce authentication and authorization, and log security-relevant events safely."
+    },
+    {
+      "id": 153,
+      "question": "Why startups prefer Python?",
+      "category": "Core Python",
+      "level": "Intermediate",
+      "answer": "Python can reduce development time through readable syntax, mature libraries, strong web frameworks, and broad developer availability. Startups choose it when those benefits fit the product."
+    }
+  ]
+}
